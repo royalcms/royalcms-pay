@@ -29,5 +29,19 @@
         "psr-4": {
             "Royalcms\\Component\\Pay\\": "Royalcms/Component/Pay"
         }
-    }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "5.0-dev"
+        },
+        "royalcms": {
+            "providers": [
+                "Royalcms\\Component\\Pay\\PayServiceProvider"
+            ],
+            "aliases": {
+                "RC_Pay": "Royalcms\\Component\\Pay\\Facades\\Pay"
+            }
+        }
+    },
+    "minimum-stability": "dev"
 }
